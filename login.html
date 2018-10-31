@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <title>Particle Login</title>
+</head>
+
+<body class="bodypati">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top size font-weight-bold navii">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                Admin </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon">
+
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a href="hotel.html" class="nav-link" class="text-dark">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="festival.html" class="nav-link">Festivals</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="tips.html" class="nav-link">Travel Tips</a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a href="#iinner" class="nav-link" id="view-contact">Contacts Us</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End nav -->
+
+    <div id="particles-js">
+        <div class="btext">
+
+
+            <div class="modal-dialog text-center">
+                <div class="col-sm-8 main main-section">
+                    <div class="modal-content">
+                        <div class="col-12 user-img">
+                            <img src="img/png1.png" alt="">
+                        </div>
+
+                        <form action="" class="col-12">
+
+                            <div class="form-groupp">
+                                <input type="text" class="form-control" placeholder="Enter Username">
+                            </div>
+                            <div class="form-groupp">
+                                <input type="password" class="form-control" placeholder="Enter Password">
+                            </div>
+
+                            <button type="submit" class="btnn">
+                                <i class="fas fa-sign-in-alt"></i>Login
+                            </button>
+                        </form>
+                        <div class="col-12 forgot">
+                            <a href="#!">Forgot Password?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('particles.json loaded....')
+        })
+    </script>
+</body>
+
+</html>
