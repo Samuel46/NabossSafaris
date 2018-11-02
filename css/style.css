@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
 :root {
   --container-bg-color: #333;
   --left-bg-color: rgba(65, 236, 94, 0.7);
@@ -11,8 +13,26 @@
   --gridi: rgba(105, 137, 163, 0.8);
 }
 
-/* Translate */
+.slider .caption {
+  background:  rgba(36, 43, 40, 0.5);
+  padding: 20px;
+  margin: 20px;
+  border-bottom: #558b2f solid 3px;
+  border-top: #fff solid 1px;
+}
 
+*{
+  font-family: 'Comfortaa', cursive;
+}
+.language {
+  color: #558b2f;
+}
+
+.language .fas {
+  font-size: 40px;
+}
+
+/* Translate */
 
 
 .goog-te-gadget-simple .goog-te-menu-value span{
@@ -25,10 +45,9 @@
   width: 150px;
   padding: 1em;
   border-bottom: #558b2f solid 3px;
-  border-bottom: #fff solid 1px;
 }
 .translate{
-  width: 0;
+  width: 120%;
   left: 50%;
   height: 0;
   margin-bottom: 70px;
@@ -148,7 +167,7 @@ button {
 .bodypati {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Comfortaa', cursive;
   font-size: 16px;
 }
 .btnn {
@@ -268,7 +287,7 @@ button {
   position: absolute;
   height: 100%;
   display: block;
-  background-color: #558b2f
+  background-color: #558b2f;
   width: 5px;
   top: 0;
   left: 50%;
@@ -414,8 +433,14 @@ button {
 .conn {
   min-height: 90vh;
 }
+.smarr{
+  min-height: 130vh;
+}
+.three{
+  min-height: 120vh;
+}
 .smar {
-  min-height: 100vh;
+  min-height: 120vh;
 }
 .cadib {
   min-height: 110vh;
@@ -459,7 +484,7 @@ button {
   color: #666;
   font-size: 2rem;
   font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Comfortaa', cursive;
 }
 
 /* Contact and About Us */
@@ -768,7 +793,7 @@ body {
   padding: 0;
   font-size: 100%;
   line-height: 1.6;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Comfortaa', cursive;
   font-size: 17px;
 }
 
@@ -993,8 +1018,7 @@ body,
 .slider-content {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
+  font-family: 'Comfortaa', cursive;
   height: 100vh;
   overflow-x: hidden;
 }
@@ -1098,7 +1122,7 @@ body,
   color: #666;
   font-size: 2rem;
   font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Comfortaa', cursive;
 }
 
 .h44 {
@@ -1199,7 +1223,7 @@ section.more a {
   background: #fff;
   min-width: 15px;
   color: #333;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Comfortaa', cursive;
   font-weight: bold;
 }
 
@@ -1333,7 +1357,7 @@ section.more a {
 
 .split.right {
   right: 0;
-  background: url('../img/mom1.jpeg') center center no-repeat;
+  background: url('../img/aboselipark.jpg') center center no-repeat;
   background-size: cover;
 }
 
