@@ -13,6 +13,19 @@
   --gridi: rgba(105, 137, 163, 0.8);
 }
 
+.trip-advicer{
+  height: 70px;
+  width: 70px;
+}
+
+.carousel-item .overlay{
+  background:  rgba(36, 43, 40, 0.5);
+  padding: 20px;
+  margin: 20px;
+  border-bottom: #558b2f solid 3px;
+  border-top: #fff solid 1px;
+}
+
 .slider .caption {
   background:  rgba(36, 43, 40, 0.5);
   padding: 20px;
@@ -599,7 +612,7 @@ button {
 
 #showcase .bg-image {
   position: absolute;
-  background: #33f15b url('../img/color.jpeg');
+  background: #33f15b url('../img/zeb1.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
