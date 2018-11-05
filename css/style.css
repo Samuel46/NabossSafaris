@@ -13,6 +13,21 @@
   --gridi: rgba(105, 137, 163, 0.8);
 }
 
+.slider {
+  margin-top: 2;
+}
+
+
+
+
+.sidenav a{
+  color: #fff;
+}
+
+.nav-wrapper img {
+  height: 100px;
+  width: 100px
+}
 .trip-advicer{
   height: 70px;
   width: 70px;
@@ -450,7 +465,7 @@ button {
   min-height: 130vh;
 }
 .three{
-  min-height: 120vh;
+  min-height: 160vh;
 }
 .smar {
   min-height: 120vh;
