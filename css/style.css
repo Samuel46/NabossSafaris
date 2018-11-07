@@ -114,6 +114,11 @@
     display: none;
   }
 
+  .navbar .navbar-brand img{
+    height:
+    width: 100px;
+    display: none;
+  }
   .navbar-fixed {
    overflow: hidden;
   }
@@ -1183,7 +1188,7 @@ body,
   padding: 2em 1em 1em;
 }
 
-img {
+ img {
   display: block;
   width: 100%;
   height: auto;
