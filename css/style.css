@@ -13,6 +13,8 @@
   --gridi: rgba(105, 137, 163, 0.8);
 }
 
+
+
 .slider {
   margin-top: 2;
 }
@@ -114,8 +116,11 @@
     display: none;
   }
 
+  
+  
+
   .navbar .navbar-brand img{
-    height:
+    
     width: 100px;
     display: none;
   }
@@ -1187,6 +1192,9 @@ body,
   text-align: center;
   padding: 2em 1em 1em;
 }
+
+
+
 
  img {
   display: block;
