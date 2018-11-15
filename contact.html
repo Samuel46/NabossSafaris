@@ -56,7 +56,7 @@
               </p>
               <p>
                 <label>Last Name</label>
-                <input type="text" name="company" id="company" />
+                <input type="text" name="last" id="company" />
               </p>
               <p>
                 <label>Email Address</label>
@@ -68,21 +68,45 @@
               </p>
               <p class="full">
                 <label>Message</label>
-                <textarea name="message" rows="5" id="message"></textarea>
+                <textarea name="msg" rows="5" id="message"></textarea>
               </p>
-              <p class="full"><button type="submit">Submit</button></p>
+              <p class="full">
+                <button type="submit" name="submit">Submit</button>
+              </p>
             </form>
           </div>
         </div>
       </div>
     </main>
 
-    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-    <script src="main.js"></script>
+    <script src=""></script>
 
     <script>
       // Pre loader
+      // Show alert
+      // Listen for form submit
+      // Listen for form submit
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", submitForm);
+      // Submit form
+      function submitForm(e) {
+        e.preventDefault();
 
+        // Show alert
+        document.querySelector(".alert").style.display = "block";
+
+        // Hide alert after 3 seconds
+        setTimeout(function() {
+          document.querySelector(".alert").style.display = "none";
+        }, 3000);
+
+        // Clear form
+        document.getElementById("contactForm").reset();
+      }
+
+      // Clear form
+      document.getElementById("contactForm").reset();
       document.querySelector(".main main").style.display = "none";
       document.querySelector(".main").classList.add("spinner-3");
 
@@ -90,7 +114,7 @@
       setTimeout(() => {
         document.querySelector(".main").classList.remove("spinner-3");
         document.querySelector(".main main").style.display = "block";
-      }, 2500);
+      },1000);
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
           {
