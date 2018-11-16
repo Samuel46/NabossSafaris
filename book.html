@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-sm bg-light navbar-light  size font-weight-bold navii">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
-                    <img src="img/png.fw.png"> </a>
+                    <img src="img/loogoo.jpg" class="logo-img"> </a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -75,13 +75,7 @@
                                 <h3>Personal Infomation</h3>
                                 <p>Please fill out this form to book a place</p>
 
-                                <div class="alert">Your bookings has been sent
-                                    <p>Naboss Travel&Tours
-                                        <br> Naboss Tours and Travel is uniquely focused on providing an authentic fun
-                                        filled
-                                        African experience to our customers</p>
-                                </div>
-
+                                
                                 <form id="contactForm" action="confirm.html">
                                     <div class=" form-row ">
                                         <div class="col-md-4 mb-3 ">
@@ -569,8 +563,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
-
+    
 
     <script>
         document.querySelector('.main section').style.display = 'none';
@@ -590,81 +583,7 @@
     <script>
         // Initailize Firebase!!!!!
         // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyBylawWWxvGOtRHRUyVJND91SQ2rmWHRBs",
-            authDomain: "naboss-travels.firebaseapp.com",
-            databaseURL: "https://naboss-travels.firebaseio.com",
-            projectId: "naboss-travels",
-            storageBucket: "naboss-travels.appspot.com",
-            messagingSenderId: "310197400404"
-        };
-        firebase.initializeApp(config);
-
-
-
-
-
-        // Reference message collection
-        var messagesRef = firebase.database().ref('messages');
-
-
-
-        // Listen For Form Submit
-        document.getElementById('contactForm').addEventListener('submit', submitForm);
-
-        //  SUbmit Form
-        function submitForm(e) {
-            e.preventDefault();
-
-            //    Get all Values  
-            // All values are working well!!!!!!!!
-            var first = getInputVal('name');
-            var last = getInputVal('last');
-            var email = getInputVal('email');
-            var country = getInputVal('country');
-            var alduts = getInputVal('alduts');
-            var child = getInputVal('child');
-            var date = getInputVal('date');
-
-            // Save Message
-            saveMessage(first, last, email, country, alduts, child, date);
-
-
-            // Show Alert
-
-            document.querySelector('.alert').style.display = 'block';
-            // Hide alert after  3 seconds
-
-            setTimeout(function () {
-                document.querySelector('.alert').style.display = 'none';
-            }, 8000);
-
-            //    Clear form
-            document.getElementById('contactForm').reset();
-
-
-
-        }
-
-        // Function to get form values 
-        function getInputVal(id) {
-            return document.getElementById(id).value;
-        }
-
-        // Save the message to firebase
-        function saveMessage(first, last, email, country, alduts, child, date) {
-            var newMessageRef = messagesRef.push();
-            newMessageRef.set({
-                first: first,
-                last: last,
-                email: email,
-                country: country,
-                alduts: alduts,
-                child: child,
-                date: date
-            });
-        }
-
+       
 
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'af,de,es,fr,hi,ja,ru,tr,zh-CN,zu', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');

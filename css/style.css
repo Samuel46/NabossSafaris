@@ -447,6 +447,7 @@ button {
   z-index: 0;
 }
 
+
 .alert {
   text-align: center;
   padding: 10px;
@@ -454,6 +455,13 @@ button {
   color: #fff;
   margin-bottom: 10px;
   display: none;
+}
+.logo-img{
+  height: 100px;
+  width: 100px;
+  display: block;
+  background-position: center;
+  background: transparent;
 }
 
 .loader {
