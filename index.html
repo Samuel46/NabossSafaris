@@ -72,7 +72,7 @@
 
 
                             <li class="brown dark-4">
-                                <a href="#contact">Contact Us</a>
+                                <a href="contact.html">Contact Us</a>
 
                             </li>
 
@@ -104,7 +104,7 @@
 
             </li>
             <li class="brown dark-4">
-                <a href="#contact" class="white-text">Contact Us</a>
+                <a href="#" class="white-text">Contact Us</a>
 
             </li>
             <li class="brown dark-4">
@@ -1042,40 +1042,7 @@
 
 
         <!-- Section: Contact -->
-        <section id="contact" class="section section-contact center scrollspy anim">
-            <div id="googlemap"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m6 offset-m6">
-                        <div class="card-panel z-depth-5" >
-                            <h4>Contact Us</h4>
-                            <div class="alert">Thank you for contacting Naboss Safaris <br>
-                            We'll get back to you soon!</div>
-                            <form action="confirm.html" id="contactForm">
-                            <div class="input-field">
-                                <input type="text" id="name" placeholder="Name" required>
-                                <label for="name">Name</label>
-                            </div>
-                            <div class="input-field">
-                                <input type="email" id="email" placeholder="Email" required>
-                                <label for="email">Email</label>
-                            </div>
-                            <div class="input-field">
-                                <input type="text" id="phone" placeholder="Phone Number" required>
-                                <label for="phone">Phone</label>
-                            </div>
-                            <div class="input-field">
-                                <textarea class="materialize-textarea" id="message" placeholder="Message" required></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                            <input type="submit" value="submit" name="submit" class="btm blue-grey">
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
         <!-- Contact section -->
 
@@ -1184,28 +1151,8 @@
             new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'af,de,es,fr,hi,ja,ru,tr,zh-CN,zu', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
         }
 
-         // Listen for form submit
-      document
-      .getElementById("contactForm")
-      .addEventListener("submit", submitForm);
-    // Submit form
-    function submitForm(e) {
-      e.preventDefault();
+       
 
-      // Show alert
-      document.querySelector(".alert").style.display = "block";
-
-      // Hide alert after 3 seconds
-      setTimeout(function() {
-        document.querySelector(".alert").style.display = "none";
-      }, 6000);
-
-      // Clear form
-      document.getElementById("contactForm").reset();
-    }
-
-    // Clear form
-    document.getElementById("contactForm").reset();
     document.querySelector(".main main").style.display = "none";
     document.querySelector(".main").classList.add("spinner-3");
 
