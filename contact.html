@@ -140,11 +140,20 @@
       document.querySelector(".main main").style.display = "none";
       document.querySelector(".main").classList.add("spinner-3");
 
-      // Mimic server request
-      setTimeout(() => {
-        document.querySelector(".main").classList.remove("spinner-3");
-        document.querySelector(".main main").style.display = "block";
-      },1000);
+      // Pre loader
+
+        document.querySelector('.main main').style.display = 'none';
+        document.querySelector('.main').classList.add('spinner-3');
+
+        // Mimic server request
+        setTimeout(() => {
+
+            document.querySelector('.main').classList.remove('spinner-3');
+            document.querySelector('.main main').style.display = 'block';
+
+        }, 1000);
+      
+
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
           {

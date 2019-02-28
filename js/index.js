@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-document.getElementById("contactForm").addEventListener("submit", submitForm);
+
 // Submit form
 function submitForm(e) {
   e.preventDefault();

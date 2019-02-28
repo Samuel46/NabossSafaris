@@ -14,7 +14,9 @@
 }
 
 
-
+.h4 {
+  color: #222;
+}
 
 
 
@@ -1887,19 +1889,8 @@ ul {
 
 /* Booking */
 
-.booking {
-  background: url('../img/j6.jpeg');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
-.bookingg {
-  background: url('../img/hotel2.jpeg');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
+
 
 .bookng {
   background: url('../img/png.png');
