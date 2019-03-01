@@ -67,18 +67,17 @@
                                 <p>Please fill out this form to book a place</p>
 
                                 
-                                <form id="contactForm" action="confirm.html">
+                                <form name="safaris book" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                                     <div class=" form-row ">
                                         <div class="col-md-4 mb-3 ">
                                             <label>First name</label>
-                                            <input type="text " class="form-control " name="first " id="name
-                                    "
+                                            <input type="text " class="form-control " name="first Name " 
                                                 placeholder="First name " required>
 
                                         </div>
                                         <div class="col-md-4 mb-3 ">
                                             <label>Last name</label>
-                                            <input type="text " class="form-control " id="last " placeholder="Last name " name="last"
+                                            <input type="text " class="form-control "  placeholder="Last name " name="last Name"
                                                 required>
 
                                         </div>
@@ -86,7 +85,7 @@
                                             <label>Email Adress</label>
                                             <div class="input-group ">
 
-                                                <input type="email " class="form-control " id="email " name="username
+                                                <input type="email " class="form-control " id="email " name="email Address
                                     "
                                                     placeholder="Email " aria-describedby="inputGroupPrepend " required>
 
@@ -96,7 +95,7 @@
                                     <div class="form-row ">
                                         <div class="form-group col-md-6 ">
                                             <label for="inputState ">Country</label>
-                                            <select id="country " class="form-control " placeholder="State " class="country" required>
+                                            <select name="country " class="form-control " placeholder="State " class="country" required>
 
                                                 <option value=" " selected="selected ">Select Country</option>
                                                 <option value="United States ">United States</option>
@@ -360,7 +359,7 @@
 
                                         <div class="form-group col-md-3">
                                             <label for="inputState">Alduts</label>
-                                            <select id="alduts" class="form-control" placeholder="State" required>
+                                            <select name="No. of alduts" class="form-control" placeholder="State" required>
                                                 <option value="" selected="selected">Number Of Aldults</option>
                                                 <option value="0">0</option>
                                                 <option value="1">1</option>
@@ -399,7 +398,7 @@
 
                                         <div class="form-group col-md-3">
                                             <label for="children">Children</label>
-                                            <select id="child" name="child" class="form-control" required>
+                                            <select  name="No. of child" class="form-control" required>
                                                 <option value="" selected="selected">Number Of Childern</option>
                                                 <option value="0">0</option>
                                                 <option value="1">1</option>
@@ -445,7 +444,7 @@
 
                                 <div class="form-group col-md-4 bg-color">
                                     <label for="inputPassword4">Phone Number</label>
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone No."
+                                    <input type="text" name="phone No." class="form-control" placeholder="Phone No."
                                         required>
                                 </div>
 
@@ -471,6 +470,9 @@
                                 </div>
                             </div>
                         </div>
+                    </p>
+                    <div data-netlify-recaptcha="true"></div>
+                    <p>
 
                         <button class="btn btn-primary" type="submit">Book Now</button>
 
