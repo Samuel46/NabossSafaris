@@ -23,7 +23,7 @@ body {
   height: 100vh;
 
   font-weight: 400;
-  background: url("../img/loogoo.jpg");
+  background: url("../img/loogoo.jpg")no-repeat;
   background-position: center;
   background-size: cover;
   opacity: 0.9;
