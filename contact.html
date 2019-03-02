@@ -79,7 +79,7 @@
           <div class="contact">
             <h3>Talk to us for any queries</h3>
             <div class="alert">Your message has been sent</div>
-            <form  method="POST" data-netlify="true">
+            <form  name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
               <p>
                 <label>First Name</label>
                 <input type="text" name="name"  required />
@@ -100,10 +100,9 @@
                 <label>Message</label>
                 <textarea name="msg" rows="5" ></textarea>
               </p>
-              <div class="field">
-                <div data-netlify-recaptcha="true"></div>
-
-              </div>
+            </p>
+            <div data-netlify-recaptcha="true"></div>
+            <p>
               <p class="full">
                 <button type="submit" name="submit">Submit</button>
               </p>
