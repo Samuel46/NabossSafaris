@@ -77,37 +77,36 @@
             </ul>
           </div>
           <div class="contact">
-            <h3>Talk to us for any queries</h3>
-            
-            <form method="POST" data-netlify="true">
+            <h3>Email Us</h3>
+            <div class="alert">Your message has been sent</div>
+            <form id="contactForm">
               <p>
                 <label>First Name</label>
-                <input type="text" name="first name"  required />
+                <input type="text" name="name" id="name" required />
               </p>
               <p>
                 <label>Last Name</label>
-                <input type="text" name="last name"  />
+                <input type="text" name="last" id="company" />
               </p>
               <p>
                 <label>Email Address</label>
-                <input type="email" name="email Address"  required />
+                <input type="email" name="email" id="email" required />
               </p>
               <p>
                 <label>Phone Number</label>
-                <input type="text" name="phone No."  />
+                <input type="text" name="phone" id="phone" />
               </p>
               <p class="full">
                 <label>Message</label>
-                <textarea name="msg" rows="5" ></textarea>
+                <textarea name="msg" rows="5" id="message"></textarea>
               </p>
-            </p>
-            <div data-netlify-recaptcha="true"></div>
-            <p>
               <p class="full">
                 <button type="submit" name="submit">Submit</button>
               </p>
             </form>
           </div>
+
+
         </div>
       </div>
     </main>
@@ -118,9 +117,39 @@
       // Pre loader
       // Show alert
       // Listen for form submit
-     
-      
+ // Pre loader
+      // Show alert
+      // Listen for form submit
+      // Listen for form submit
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", submitForm);
+      // Submit form
+      function submitForm(e) {
+        e.preventDefault();
 
+        // Show alert
+        document.querySelector(".alert").style.display = "block";
+
+        // Hide alert after 3 seconds
+        setTimeout(function() {
+          document.querySelector(".alert").style.display = "none";
+        }, 3000);
+
+        // Clear form
+        document.getElementById("contactForm").reset();
+      }
+
+      // Clear form
+      document.getElementById("contactForm").reset();
+      document.querySelector(".main main").style.display = "none";
+      document.querySelector(".main").classList.add("spinner-3");
+
+      // Mimic server request
+      setTimeout(() => {
+        document.querySelector(".main").classList.remove("spinner-3");
+        document.querySelector(".main main").style.display = "block";
+      },1000);
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
           {
