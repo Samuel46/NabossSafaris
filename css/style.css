@@ -12,6 +12,36 @@
   --grido: rgba(44, 49, 53, 0.8);
   --gridi: rgba(105, 137, 163, 0.8);
 }
+.booking{
+  color: #fff;
+  
+}
+
+*{
+  text-decoration: none;
+  
+}
+
+.btno {
+  display: inline-block;
+  background: #c5b30d;
+  color: #fff !important;
+  text-decoration: none;
+  padding: 1em 2em;
+  margin: 0.5em 0;
+  text-decoration: none !important;
+}
+.btno:hover{
+  box-shadow: 3px solid #222;
+  background: rgb(82, 83, 7);
+  transition: background-color 2s ease-out;
+  font-size: bold;
+}
+
+.bg-light {
+  background-color: #fff !important;
+
+}
 
 
 .h4 {
@@ -755,7 +785,7 @@ ul {
 
 
 .btn {
-  display: inline-block;
+  display: block;
   background: #333;
   color: #fff;
   text-decoration: none;
@@ -1111,7 +1141,7 @@ body {
 
 .navbar {
   border-bottom: #558b2f 2px solid;
-  opacity: 0.8;
+  
 }
 
 #iinner .green{
@@ -1493,12 +1523,12 @@ section.more a {
   height: 2.5rem;
   width: 15rem;
   text-align: center;
-  color: #fff;
+  color: #fff !important;
   border: #fff solid 0.2rem;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: none !important;
   transform: translateX(-50%);
 }
 
@@ -1620,7 +1650,7 @@ section.more a {
   color: #fff;
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
 }
@@ -1788,7 +1818,7 @@ section.more a {
 /* Mombasa head Section */
 
 #mombasaa {
-  background: #008ed6;
+  background: #9e9174;
 }
 
 /* end */
@@ -1796,7 +1826,7 @@ section.more a {
 /* Nairobi-head-section */
 
 #nairobii {
-  background: #fdab00;
+  background: #9e9174;
 }
 
 /* end */

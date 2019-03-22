@@ -7,6 +7,23 @@
   list-style: none;
 }
 
+.btno {
+  display: inline-block;
+  background: #c5b30d;
+  color: #fff !important;
+  text-decoration: none;
+  padding: 1em 2em;
+  margin: 0.5em 0;
+  text-decoration: none !important;
+}
+.btno:hover{
+  box-shadow: 3px solid #222;
+  background: rgb(82, 83, 7);
+  transition: background-color 2s ease-out;
+  font-size: bold;
+}
+
+
 .h4 {
   color: #333;
   font-weight: bold;
