@@ -3732,7 +3732,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   background-color: #bd2130 !important; }
 
 .bg-light {
-  background-color: #f8f9fa !important; }
+  background-color: #fff !important; }
 
 a.bg-light:focus, a.bg-light:hover {
   background-color: #dae0e5 !important; }
