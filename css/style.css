@@ -652,7 +652,7 @@ ul {
   min-height: 160vh;
 }
 .smar {
-  min-height: 120vh;
+  min-height: 85vh;
 }
 .cadib {
   min-height: 110vh;
@@ -1816,6 +1816,17 @@ section.more a {
 /* End colored cards */
 
 /* Mombasa head Section */
+.section-package {
+  padding-top: 30px;
+}
+.image img{
+  height: 500px;
+  
+  background-position: center;
+  background-size: cover;
+  padding:20px;
+  margin: 10px;
+}
 
 #mombasaa {
   background: #9e9174;
