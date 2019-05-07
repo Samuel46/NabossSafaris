@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="css/fontawesome-all.css">
 </head>
 
-<body id="safir">
+<body id="safir" class="main">
+
+    <section>
 
   <nav class="navbar navbar-expand-sm bg-light navbar-light size font-weight-bold navii">
     <div class="container">
@@ -105,6 +107,7 @@
               <img class="card-img-top" src="img/tsavo.jpg" alt="Card image cap">
               <div class="card-body">
                 <h3>Tsavo West&Tsavo East</h3>
+                <strong>@ KSHs 12,000 PPS</strong>
                 <p class="card-text">Day 1: Mombasa – Tsavo West National park Pick up from our Kenya coast beach
                   hotel. Proceed along the Mombasa-Nairobi
                   highway with refreshment stops. Enter the scenic Tsavo West national park and commence game viewing
@@ -127,6 +130,7 @@
               <img class="card-img-top" src="img/aboseli5.jpg" alt="Card image cap">
               <div class="card-body">
                 <h3>Amboseli National Park </h3>
+                <strong>@ KSHs 19,000 PPS</strong>
                 <p class="card-text">Day 1: Mombasa– Tsavo East National park Pick up shall be from our beach hotel in
                   the morning and drive along
                   the main Mombasa-Nairobi highway through semi-arid country to the Tsavo East National Park and enter
@@ -149,6 +153,7 @@
               <img class="card-img-top" src="img/Tsavo_West_National_Park02.jpg" alt="Card image cap">
               <div class="card-body">
                 <h3>1Day Tour Tsavo East National Park </h3>
+                <strong>@ KSHs 27,000 PPS</strong>
                 <p class="card-text">The 1 day Tsavo East trip starts before dawn. This allows you to explore and to
                   spend maximum time at the
                   Tsavo East National Park. Proceed along the Nairobi – Mombasa highway on a scenic drive along smooth
@@ -171,6 +176,7 @@
               <img class="card-img-top" src="img/Tsavoeast.jpg" alt="Card image cap">
               <div class="card-body">
                 <h3>2Days 1Night Tour TsavoE&W National Park </h3>
+                <strong>@ KSHs 30,000 PPS</strong>
                 <p class="card-text">Day 1 – Mombasa – Tsavo East – 2 hrs drive Pick up in the morning and drive along
                   the main Mombasa-Nairobi
                   highway to the Tsavo East National Park through Buchuma gate. we shall begin game viewing on entry
@@ -202,31 +208,7 @@
 
 
     <!-- Landing Page Slider -->
-    <script>
-      // Animate Smooth Scroll
-
-
-      const left = document.querySelector('.left');
-      const right = document.querySelector('.right');
-      const continer = document.querySelector('.continer');
-
-
-      left.addEventListener('mouseenter', () => {
-        continer.classList.add('hover-left');
-      });
-
-      left.addEventListener('mouseleave', () => {
-        continer.classList.remove('hover-left');
-      });
-
-      right.addEventListener('mouseenter', () => {
-        continer.classList.add('hover-right');
-      });
-
-      right.addEventListener('mouseleave', () => {
-        continer.classList.remove('hover-right');
-      });
-    </script>
+    
 
     <!-- section about us -->
     <div class="conner">
@@ -287,51 +269,27 @@
     </footer>
 
 
-
+</section>
 
 
     </script>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+    
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-      // Init Scrollspy
+       document.querySelector('.main section').style.display = 'none';
+        document.querySelector('.main').classList.add('spinner-2');
 
+        // Mimic server request
+        setTimeout(() => {
 
-      $('#view-contact').on('click', function () {
-        const iinner = $('#iinner').position().top;
-        $('html, body').animate({
-          scrollTop: iinner
-        },
-          900
-        );
-      });
+            document.querySelector('.main').classList.remove('spinner-2');
+            document.querySelector('.main section').style.display = 'block';
 
-      // Nairobi
-      $('#nairobi').on('click', function () {
-        const nairobii = $('#nairobii').position().top;
-        $('html, body').animate({
-          scrollTop: nairobii
-        },
-          900
-        );
-      });
+        }, 1000);
 
-
-      // Mombasa
-      $('#mombasa').on('click', function () {
-        const mombasaa = $('#mombasaa').position().top;
-        $('html, body').animate({
-          scrollTop: mombasaa
-        },
-          900
-        );
-      });
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'af,de,es,fr,hi,ja,ru,tr,zh-CN,zu', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-      }
     </script>
 </body>
 

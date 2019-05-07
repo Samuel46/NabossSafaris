@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="css/fontawesome-all.css">
 </head>
 
-<body id="safir">
+<body id="safir" class="main">
+
+    <section>
 
   <nav class="navbar navbar-expand-sm bg-light navbar-light size font-weight-bold navii">
     <div class="container">
@@ -99,8 +101,9 @@
             <img class="card-img-top" src="img/panarihote.jpg" alt="Card image cap">
             <div class="card-body">
                 <h4>Panari Hotel</h4>
+                <strong>@ KSHs 18,000 per night</strong>
               <div class="btn-group">
-                <a href="book.html" class="btf">Book Now</a>
+                <a href="hbook.html" class="btf">Book Now</a>
               </div>
               <p class="card-text">Overlooking Nairobi National Park, this hotel is 10 minutes’ drive from Jomo Kenyatta International Airport. Each room includes a flat-screen TV with satellite channels. Free parking is provided..</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -116,8 +119,9 @@
             <img class="card-img-top" src="img/serenahotel.jpg" alt="Card image cap">
             <div class="card-body">
                 <h4>Serena Hotel Nairobi</h4>
+                <strong>@ KSHs 19,000 per night</strong>
               <div class="btn-group">
-                <a href="book.html" class="btm">Book Now</a>
+                <a href="hbook.html" class="btm">Book Now</a>
               </div>
 
               <p class="card-text">Situated in the heart of Nairobi, the extensive ground of Serena Hotel contains a fitness centre and spa. Guests can relax in a sun lounger beside the outdoor pool, which is surrounded by palm trees. </p>
@@ -133,8 +137,9 @@
             <img class="card-img-top" src="img/intercontinentalhotel2.jpg" alt="Card image cap">
             <div class="card-body">
                 <h4>Interconinetal Hotel</h4>
+                <strong>@ KSHs 16,000 per night</strong>
               <div class="btn-group">
-                <a href="book.html" class="btm">Book Now</a>
+                <a href="hbook.html" class="btm">Book Now</a>
               </div>
               <p class="card-text">Situated a 30-minute drive from Nairobi National Park, this hotel features a heated outdoor pool, a wellness centre with a gym and a colonial-style Safari Bar serving cocktails and light snacks. </p>
               <div class="d-flex justify-content-between align-items-center">
@@ -150,8 +155,9 @@
             <img class="card-img-top" src="img/boma.jpg" alt="Card image cap">
             <div class="card-body">
                 <h4>Boma Hotel</h4>
+                <strong>@ KSHs 12,000 per night</strong>
               <div class="btn-group">
-                <a href="book.html" class="btm">Book Now</a>
+                <a href="hbook.html" class="btm">Book Now</a>
               </div>
               <p class="card-text">located in the south of Nairobi, Boma offers spacious rooms with warm and contemporary décor. Guests can relax at the outdoor pool or enjoy a treatment at the spa and wellness centre.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -167,8 +173,9 @@
             <img class="card-img-top" src="img/bluradison.jpg" alt="Card image cap">
             <div class="card-body">
                <h4>Radisson Blu Hotel</h4>
+               <strong>@ KSHs 15,000 per night</strong>
               <div class="btn-group">
-                <a href="book.html" class="btm">Book Now</a>
+                <a href="hbook.html" class="btm">Book Now</a>
               </div>
               <p class="card-text">Radisson Blu Hotel Nairobi is located in Nairobi, 20-minutes' drive from the Nairobi National Park. Located in the central business district, the hotel has 12 meeting rooms and a business center.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -184,8 +191,9 @@
             <img class="card-img-top" src="img/safaripark.jpg" alt="Card image cap">
             <div class="card-body">
               <h4>Safari Park Hotel</h4>
+              <strong>@ KSHs 13,000 per night</strong>
               <div class="btn-group">
-                <a href="book.html" class="btm">Book Now</a>
+                <a href="hbook.html" class="btm">Book Now</a>
               </div>
 
               <p class="card-text">Set across a 50-acre elegant manicured gardens, Safari Park Hotel features an outdoor swimming pool, restaurant and bar</p>
@@ -201,8 +209,9 @@
             <img class="card-img-top" src="img/olesarani.jpeg" alt="Card image cap">
             <div class="card-body">
                 <h4>Ole Sereni Hotel</h4>
+                <strong>@ KSHs 12,000 per night</strong>
               <div class="btn-group">
-                <a href="book.html" class="btm">Book Now</a>
+                <a href="hbook.html" class="btm">Book Now</a>
               </div>
 
               <p class="card-text">Overlooking the Nairobi National Park, Ole-Sereni features an outdoor pool, 2 restaurants and a snack bar. The hotel's health club offers aerobics, steam, sauna, massage facilities and a salon.</p>
@@ -217,8 +226,9 @@
             <img class="card-img-top" src="img/amboselipark4.jpg" alt="Card image cap">
             <div class="card-body">
                 <h4>Sarova Stanley Hotel</h4>
+                <strong>@ KSHs 10,000 per night</strong>
               <div class="btn-group">
-                <a href="book.html" class="btm">Book Now</a>
+                <a href="hbook.html" class="btm">Book Now</a>
               </div>
 
               <p class="card-text">Featuring a pool terrace and 3 restaurants, the hotel Sarova Stanley is located in central Nairobi. It offers a bar, fitness centre, and luxury rooms with free Wi-Fi.</p>
@@ -250,32 +260,7 @@
 
 
     <!-- Landing Page Slider -->
-    <script>
-      // Animate Smooth Scroll
-
-
-      const left = document.querySelector('.left');
-      const right = document.querySelector('.right');
-      const continer = document.querySelector('.continer');
-
-
-      left.addEventListener('mouseenter', () => {
-        continer.classList.add('hover-left');
-      });
-
-      left.addEventListener('mouseleave', () => {
-        continer.classList.remove('hover-left');
-      });
-
-      right.addEventListener('mouseenter', () => {
-        continer.classList.add('hover-right');
-      });
-
-      right.addEventListener('mouseleave', () => {
-        continer.classList.remove('hover-right');
-      });
-    </script>
-
+    
     <!-- section about us -->
     <div class="conner">
       <section id="section-d" class="grido">
@@ -335,51 +320,28 @@
     </footer>
 
 
-
+ </section>
 
 
     </script>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+    
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
       // Init Scrollspy
+      document.querySelector('.main section').style.display = 'none';
+        document.querySelector('.main').classList.add('spinner-2');
 
+        // Mimic server request
+        setTimeout(() => {
 
-      $('#view-contact').on('click', function () {
-        const iinner = $('#iinner').position().top;
-        $('html, body').animate({
-          scrollTop: iinner
-        },
-          900
-        );
-      });
+            document.querySelector('.main').classList.remove('spinner-2');
+            document.querySelector('.main section').style.display = 'block';
 
-      // Nairobi
-      $('#nairobi').on('click', function () {
-        const nairobii = $('#nairobii').position().top;
-        $('html, body').animate({
-          scrollTop: nairobii
-        },
-          900
-        );
-      });
+        }, 1000);
 
-
-      // Mombasa
-      $('#mombasa').on('click', function () {
-        const mombasaa = $('#mombasaa').position().top;
-        $('html, body').animate({
-          scrollTop: mombasaa
-        },
-          900
-        );
-      });
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'af,de,es,fr,hi,ja,ru,tr,zh-CN,zu', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-      }
     </script>
 </body>
 
