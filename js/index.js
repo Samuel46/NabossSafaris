@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-
 // Submit form
 function submitForm(e) {
   e.preventDefault();

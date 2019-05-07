@@ -21,8 +21,29 @@
 
 
 <body id="home" class=" main  scrollspy">
+
+        <main>
+
+    <!-- Dropdown -->
+    <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+        <li><a href="safaris.html">Nairobi Safaris</a></li>
+        <li><a href="mombsafaris.html">Mombasa Safaris</a></li>
+        <li class="divider"></li>
+       
+      </ul>
+
+
+      <ul id="dropdown2" class="dropdown-content">
+            <li><a href="nairobihotel.html">Nairobi Hotels</a></li>
+            <li><a href="mombasahotel.html">Mombasa Hotels</a></li>
+            <li class="divider"></li>
+            
+          </ul>
+      
+    <!-- end of dropdown -->
     <!-- Navbar -->
-    <main>
+ 
 
 
         <div class="navbar-fixed nav">
@@ -44,14 +65,14 @@
                             </li>
 
                             
-                            <li class="brown dark-4">
-                                <a href="mombsafaris.html">Mombasa Safaris</a>
-
-                            </li>
-                            <li class="brown dark-4">
-                                <a href="safaris.html">Nairobi Safaris</a>
-
-                            </li>
+                           <!-- Dropdown Trigger -->
+           
+                           <li>
+                            <a class="dropdown-trigger brown dark-4" href="#!" data-target="dropdown1"> Safaris<i class="material-icons right">arrow_drop_down</i></a>
+            
+            
+                           </li>
+                           
                             <li class="brown dark-4">
                                 <a href="#popular">Popular Places</a>
 
@@ -66,14 +87,12 @@
                             </li>
 
 
-                            <li class="brown dark-4">
-                                <a href="nairobihotel.html">Nairobi Hotel</a>
-
-                            </li>
-                            <li class="brown dark-4">
-                                    <a href="mombasahotel.html">Mombasa Hotel</a>
-    
-                                </li>
+                          
+                                   <li>
+                                        <a class="dropdown-trigger brown dark-4" href="#!" data-target="dropdown2"> Hotels<i class="material-icons right">arrow_drop_down</i></a>
+                        
+                        
+                                       </li>
                             <li class="brown dark-4">
                                 <a href="tips.html">Travel Tips</a>
 
@@ -84,6 +103,7 @@
                                 <a href="contact.html">Contact Us</a>
 
                             </li>
+                             
 
 
 
@@ -636,7 +656,7 @@
                         <div class="card-panel conn">
                             <i class="material-icons large green-text">beach_access</i>
                             <i class="fas-fa-home"></i>
-                            <h4>Accommodation reservation services </h4>
+                            <h4>Reservation services </h4>
 
                             <p>Naboss Travel and Tours will ensure that clients are provided with secure, comfortable
                                 and affordable
@@ -869,7 +889,7 @@
                             </div>
                             <div class="card-content">
                                 <h4>Nairobi Amboseli Overnight Tour</h4>
-                                <strong>@ KSHs 5,000 pps</strong>
+                                <strong>@ KSHs 59,999 pps</strong>
                                 <div>
                                     <a href="book.html" class="btn-large  conte waves-effect waves-light light-green darken-3">Book
                                         Now</a>
@@ -1097,42 +1117,9 @@
         </div>
 
 
-        <!-- Section: Contact -->
+       
         
-
-         <!-- Section feature packages -->
-         <!-- <section class="packages">
-                <div class="containr">
-                    <div class="row">
-                        <div class="col s12 m6">
-                           <div class="card">
-                               <div class="card-image">
-                                   <img src="img/safaripark.jpg" width="250px"alt="">
-                               </div>
-                               <div class="card-content">
-                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque porro quaerat dicta impedit iure alias magnam doloribus ducimus ipsum quia!</p>
-                               </div>
-                           </div>
-                        </div>
-                        <div class="col s12 m6">
-                                
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img src="img/right4.jpeg" width="250px"alt="">
-                                    </div>
-                                    <div class="card-content">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque porro quaerat dicta impedit iure alias magnam doloribus ducimus ipsum quia!</p>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- End of the section -->
     
-
-
-
 
         <!-- Footer -->
 
@@ -1227,6 +1214,10 @@
                     }
                 });
         })
+
+
+
+        $(".dropdown-trigger").dropdown();
 
         
 
